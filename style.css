@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* -------------------- */
+
+:root {
+  /* primary */
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  /* neutral */
+  --white: hsla(0, 0%, 100%, 0.971);
+  --white-transparent: hsla(0, 0%, 100%, 0.727);
+  --light-gray-bg: hsl(0, 0%, 95%);
+}
+
+/* colors */
+
+.orange--bg {
+  background-color: var(--orange);
+}
+
+.cyan--bg {
+  background-color: var(--cyan);
+}
+
+.dark--cyan--bg {
+  background-color: var(--dark-cyan);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.dark--cyan {
+  color: var(--dark-cyan);
+}
+
+.bg--light {
+  background-color: var(--light-gray-bg);
+}
+
+.text--white {
+  color: var(--white);
+}
+
+.text--white__transparent {
+  color: var(--white-transparent);
+}
+
+/* ************** */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 57.75rem;
+}
+
+.container--padding {
+  padding: 3rem;
+}
+
+.padding--1 {
+  padding-bottom: 1.125rem;
+}
+
+.padding--2 {
+  padding-bottom: 3.875rem;
+}
+
+.btn {
+  padding: 12px 36px;
+  border-radius: 2em;
+  background-color: var(--white);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: 'Lexend Deca';
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+
+
+.rounded--right {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.rounded--left {
+  border-radius: 6px 0px 0px 6px;
+}
