@@ -49,15 +49,15 @@ select {
 
 /* colors */
 
-.orange--bg {
+.bg--orange {
   background-color: var(--orange);
 }
 
-.cyan--bg {
+.bg--cyan {
   background-color: var(--cyan);
 }
 
-.dark--cyan--bg {
+.bg--darkcyan {
   background-color: var(--dark-cyan);
 }
 
@@ -69,11 +69,11 @@ select {
   color: var(--cyan);
 }
 
-.dark--cyan {
+.dark__cyan {
   color: var(--dark-cyan);
 }
 
-.bg--light {
+.bg__light {
   background-color: var(--light-gray-bg);
 }
 
@@ -81,7 +81,7 @@ select {
   color: var(--white);
 }
 
-.text--white__transparent {
+.text--white--transparent {
   color: var(--white-transparent);
 }
 
@@ -90,22 +90,26 @@ select {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-content: stretch;
+  height: auto;
   max-width: 57.75rem;
+  box-shadow: 6px 6px 34px 15px rgba(3, 24, 44, 0.15);
 }
 
-.container--padding {
+.container__padding {
   padding: 3rem;
 }
 
-.padding--1 {
+.padding__1 {
   padding-bottom: 1.125rem;
 }
 
-.padding--2 {
+.padding__2 {
   padding-bottom: 3.875rem;
 }
 
 .btn {
+  display: inline-block;
   font-size: 0.9rem;
   padding: 12px 36px;
   border-radius: 2em;
@@ -119,6 +123,7 @@ select {
   border-color: var(--white);
   background-color: hsla(0, 0%, 100%, 0.02);
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 .center {
@@ -144,7 +149,9 @@ select {
   line-height: 25px;
 }
 
-
+.rounded {
+  border-radius: 6px;
+}
 
 .rounded--right {
   border-radius: 0px 6px 6px 0px;
@@ -152,4 +159,11 @@ select {
 
 .rounded--left {
   border-radius: 6px 0px 0px 6px;
+}
+
+@media (max-width: 850px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 18px;
+  }
 }
