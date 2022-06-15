@@ -54,7 +54,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-component-pure-css-grid-cJw1UM2PZ6)
-- Live Site URL: [Live Site at Vercel](https://3-column-preview-card-component-rose-two.vercel.app/)
+- Live Site URL: [Live Site at Vercel]([https://3-column-preview-card-component-rose-two.vercel.app/](https://3-column-preview-card-component-ehyejp1xk-correlucas.vercel.app/))
 ## My process
 
 ### Built with
