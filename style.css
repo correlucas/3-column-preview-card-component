@@ -176,9 +176,6 @@ select {
   border-radius: 0px 0px 8px 8px;
 }
 
-
-
-
 @media (max-width: 850px) {
   .btn {
     font-size: 0.8rem;
