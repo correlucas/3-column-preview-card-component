@@ -11,6 +11,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Lexend Deca', sans-serif;
+  background: url(./images/bg.png) no-repeat;
+  background-size: cover;
 }
 
 /* A elements that don't have a class get default styles */
@@ -50,27 +52,27 @@ select {
 /* colors */
 
 .bg--orange {
-  background-color: var(--orange);
+  background: linear-gradient(180deg, #DC30B1 0%, #A13CCE 100%);
 }
 
 .bg--cyan {
-  background-color: var(--cyan);
+  background: linear-gradient(180deg, #252B52 0%, #1A2356 100%);
 }
 
 .bg--darkcyan {
-  background-color: var(--dark-cyan);
+  background: linear-gradient(180deg, #F53794 0%, #FE6A51 100%);
 }
 
 .orange {
-  color: var(--orange);
+  color: gray;
 }
 
 .cyan {
-  color: var(--cyan);
+  color: gray;
 }
 
 .dark__cyan {
-  color: var(--dark-cyan);
+  color: gray;
 }
 
 .bg__light {
@@ -95,7 +97,45 @@ select {
   margin: 1.5rem;
   max-width: 57.75rem;
   box-shadow: 6px 6px 34px 15px rgba(3, 24, 44, 0.15);
+  -webkit-animation: slideIn 1s ease;
+  animation: slideIn 1s ease;
 }
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* .card:hover {
+  filter: saturate(1.3);
+  transition: all ease 0.5s;
+}
+
+.container:hover>.card:not(:hover) {
+  filter: grayscale(0.5);
+} */
+
+/* .card {
+  transition: all ease 0.5s;
+} */
+
+section:hover {
+  background-image: url(./images/suv.png);
+
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+}
+
 
 .container div {
   height: 100%;
@@ -206,5 +246,4 @@ select {
   .rounded--right {
     border-radius: 0px 0px 8px 8px;
   }
-
 }
