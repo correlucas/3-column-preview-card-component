@@ -4,7 +4,7 @@
   text-decoration: 0;
   box-sizing: border-box;
   font-size: 16px;
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.3s;
 }
 
 body {
@@ -50,16 +50,16 @@ select {
 
 /* colors */
 
-.bg--orange {
-  background-color: var(--orange);
+.bg--1 {
+  background: linear-gradient(180deg, #DC30B1 0%, #A13CCE 100%);
 }
 
-.bg--cyan {
-  background-color: var(--cyan);
+.bg--2 {
+  background: linear-gradient(180deg, #252B52 0%, #1A2356 100%);
 }
 
-.bg--darkcyan {
-  background-color: var(--dark-cyan);
+.bg--3 {
+  background: linear-gradient(180deg, #F53794 0%, #FE6A51 100%);
 }
 
 .orange {
@@ -75,7 +75,7 @@ select {
 }
 
 .bg__light {
-  background-color: var(--light-gray-bg);
+  background: radial-gradient(100% 100% at 50% 0%, #7A3491 0%, #56136C 100%);
 }
 
 .text--white {
@@ -96,6 +96,22 @@ select {
   margin: 1.5rem;
   max-width: 57.75rem;
   box-shadow: 6px 6px 34px 15px rgba(3, 24, 44, 0.15);
+  -webkit-animation: slideIn 1s ease;
+  animation: slideIn 1s ease;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .container div {
@@ -103,7 +119,7 @@ select {
 }
 
 .container__padding {
-  padding: 3rem;
+  padding: 2.4rem;
 }
 
 .padding__1 {
@@ -210,18 +226,39 @@ select {
 }
 
 @media (hover:hover) {
+
   .card:hover {
     filter: brightness(1.1);
-    transition: all ease-in 0.5s;
-  }
-
-  .card,
-  .container:hover>.card:not(:hover) {
-    transition: all ease-in 0.5s;
+    padding-inline: 3.5rem;
+    transition: all ease 0.3s;
   }
 
   .container:hover>.card:not(:hover) {
-    filter: grayscale(1);
-    transition: all ease-in 0.5s;
+    filter: grayscale(1.5);
+    transition: all ease 0.3s;
+  }
+
+  .card--1:hover,
+  .card--2:hover,
+  .card--3:hover {
+    transition: all ease 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card--1:hover {
+    background-image: url(./images/suv.png);
+    transition: all ease 0.5s;
+  }
+
+  .card--2:hover {
+    background-image: url(./images/sedan.png);
+    transition: all ease 0.5s;
+  }
+
+  .card--3:hover {
+    background-image: url(./images/luxury.png);
+    transition: all ease 0.5s;
   }
 }
