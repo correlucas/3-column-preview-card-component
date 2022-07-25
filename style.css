@@ -253,12 +253,12 @@ select {
   }
 
   .card--1:hover {
-    background-image: url(./images/suv.png);
+    background-image: url(./images/sedan.png);
     transition: all ease 0.5s;
   }
 
   .card--2:hover {
-    background-image: url(./images/sedan.png);
+    background-image: url(./images/suv.png);
     transition: all ease 0.5s;
   }
 
