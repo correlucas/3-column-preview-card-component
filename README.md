@@ -47,7 +47,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot/screenshot-desktop.jpg)
+![](./screenshot/screenshot-desktop.png)
 
 
 
